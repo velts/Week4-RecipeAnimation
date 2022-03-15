@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fredoka:wght@300&display=swap');
+* {
+    color: rgb(116, 116, 116);
+    margin: 0
+}
+html {
+    background-image: url("../media/food.png");
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    width: 60%;
+    animation: contentspin;
+    animation-duration: 1000ms;
+}
+@keyframes contentspin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.heading{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    animation: heading;
+    animation-duration: 3s;
+    position: relative;
+    
+}
+@keyframes heading {
+    0%{top: -250px;}
+    100% {top: 0}
+    
+}
+.picture1{
+    max-width: 100%;
+    animation: picture1;
+    animation-duration: 5s;
+}
+@keyframes picture1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+.ingredients{
+    background-color: aliceblue;
+    border: 3px solid black;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.ingredients th, .ingredients td{
+    border: 1px solid black;
+}
+.instructions2, .instructions{
+    margin-bottom: 20px;
+
+}
